@@ -5,12 +5,14 @@
         static void Main(string[] args)
         {
             int age = 20;
-            Console.WriteLine(age);
+            string userName = GreetUser("Vad heter du?");
+            Console.WriteLine($"Hej {userName} Du är {age}");
         }
 
-        public static void GreetUser(string name)
+        public static string GreetUser(string name)
         {
             Console.WriteLine($"Hej {name}");
+            return name;
         }
    }
 }
