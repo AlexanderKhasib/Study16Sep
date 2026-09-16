@@ -6,6 +6,11 @@
         {
             int age = 20;
             Console.WriteLine(age);
-            }
-    }
+        }
+
+        public static void GreetUser(string name)
+        {
+            Console.WriteLine($"Hej {name}");
+        }
+   }
 }
